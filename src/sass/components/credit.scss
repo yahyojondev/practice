@@ -1,0 +1,108 @@
+.credit {
+  padding: 79px 0px 56px;
+  width: 100%;
+  height: 400px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    &__top {
+      display: flex;
+      flex-direction: column;
+      row-gap: 14px;
+      p {
+        width: 100%;
+        max-width: 354px;
+        color: rgb(255, 255, 255);
+        font-family: Inter;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+      }
+      span {
+        color: rgb(255, 255, 255);
+        font-family: Inter;
+        opacity: 0.9;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 110%;
+        letter-spacing: 0px;
+      }
+    }
+    &__bottom {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      .credit__form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        span {
+          color: rgb(147, 150, 151);
+          font-family: Inter;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 110%;
+          letter-spacing: 0px;
+        }
+        .input__wrapper {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+
+          .contact__form__input {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 14.5px;
+            font-family: Inter;
+            color: #939697;
+            padding: 0 20px;
+            width: 300px;
+            height: 52px;
+            border: 1px solid rgb(147, 150, 151);
+            border-radius: 8px;
+            background: rgb(37, 44, 44);
+          }
+        }
+        button {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          width: 100%;
+          max-width: 207px;
+          height: 48px;
+          border-radius: 8px;
+          background: rgb(255, 149, 73);
+          color: rgb(24, 24, 24);
+          font-family: Inter;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 110%;
+          letter-spacing: 0px;
+        }
+      }
+      .form__link__checkbox {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        input {
+          width: 14px;
+          height: 14px;
+          border: 1px solid rgb(147, 150, 151);
+          border-radius: 4px;
+          background: rgb(37, 44, 44);
+        }
+        a {
+          color: rgb(255, 255, 255);
+          font-family: Inter;
+          font-size: 12px;
+          font-weight: 300;
+          line-height: 110%;
+          letter-spacing: 0px;
+        }
+      }
+    }
+  }
+}

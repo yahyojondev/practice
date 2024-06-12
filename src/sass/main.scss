@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.container {
+  width: 100%;
+  max-width: 1296px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+@import "./components/header.scss";
+@import "./components/footer.scss";
+@import "./pages/home.scss";
+@import "./components/hero.scss";
+@import "./components/time.scss";
+@import "./components/trade.scss";
+@import "./components/choose.scss";
+@import "./components/credit.scss";
+@import "./components/client.scss";

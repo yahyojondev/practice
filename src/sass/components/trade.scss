@@ -1,0 +1,186 @@
+.trade {
+  padding: 91px 0px 80px;
+  background: #1c2121;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      .trade__top__left {
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        &__top__text {
+          display: flex;
+          flex-direction: column;
+          row-gap: 12px;
+          a {
+            color: rgb(255, 149, 73);
+            font-family: Inter;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 110%;
+            letter-spacing: 0px;
+          }
+          p {
+            color: rgb(255, 255, 255);
+            font-family: Inter;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 110%;
+            letter-spacing: 0px;
+            text-transform: uppercase;
+          }
+          span {
+            width: 100%;
+            max-width: 350px;
+            color: rgb(255, 255, 255);
+            font-family: Inter;
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 110%;
+            letter-spacing: 0px;
+            text-transform: uppercase;
+          }
+          .danger {
+            padding: 7.5px 11.5px;
+            width: 100%;
+            max-width: 264px;
+            height: 30px;
+            border-radius: 10px;
+            background: rgb(255, 43, 0);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img {
+              width: 18px;
+              height: 18px;
+            }
+            a {
+              color: rgb(255, 255, 255);
+              font-family: Inter;
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 110%;
+              letter-spacing: 0px;
+            }
+          }
+        }
+        .button__wrapper {
+          display: flex;
+          flex-direction: column;
+          row-gap: 10px;
+          button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            max-width: 417px;
+            height: 48px;
+            border: 1px solid rgb(255, 149, 73);
+            border-radius: 8px;
+            color: rgb(255, 255, 255);
+            font-family: Inter;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 110%;
+            letter-spacing: 0px;
+          }
+          .danger__btn {
+            border: none;
+            width: 100%;
+            max-width: 417px;
+            font-weight: 600;
+            height: 52px;
+            border-radius: 8px;
+            background: rgb(255, 149, 73);
+            color: rgb(24, 24, 24);
+          }
+        }
+      }
+      .trade__top__right {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+        img {
+          width: 100%;
+          max-width: 802px;
+          height: 378px;
+          object-fit: contain;
+        }
+        .trade__input__wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          input {
+            width: 30px;
+            height: 30px;
+            border-radius: 50% !important;
+          }
+        }
+      }
+    }
+    &__bottom {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      .tarde__bottom__cards {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+        .tarde__card {
+          padding: 11px 14px;
+          width: 100%;
+          max-width: 306px;
+          height: 58px;
+          border-radius: 10px;
+          background: rgb(24, 24, 24);
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          img {
+            width: 30px;
+            height: 30px;
+          }
+          p {
+            width: 100%;
+            max-width: 168px;
+            color: rgb(255, 255, 255);
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 110%;
+            letter-spacing: 0px;
+          }
+        }
+      }
+      .trade__images {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        img {
+          width: 100%;
+          max-width: 240px;
+          height: 200px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+.one__trade {
+  background: #252c2c;
+}
+.trade__one__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+.trade__left {
+  display: flex;
+  flex-direction: row-reverse;
+}
