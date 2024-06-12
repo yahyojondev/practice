@@ -131,12 +131,15 @@
         p {
           color: rgb(255, 255, 255);
           font-family: Inter;
-          font-size: 40px;
+          font-size: 28px;
           font-weight: 700;
           line-height: 110%;
           letter-spacing: 0px;
           text-align: center;
           text-transform: uppercase;
+          @media only screen and (min-width: 600px) {
+            font-size: 40px;
+          }
         }
       }
       &__content {
@@ -148,9 +151,13 @@
           flex-direction: column;
           align-items: center;
           img {
-            width: 196px;
-            height: 111px;
+            width: 140px;
+            height: 97px;
             object-fit: contain;
+            @media only screen and (min-width: 600px) {
+              width: 196px;
+              height: 111px;
+            }
           }
           p {
             color: rgb(255, 255, 255);
