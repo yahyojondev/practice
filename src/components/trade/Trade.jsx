@@ -51,11 +51,11 @@ const Trade = () => {
             <div className="trade__top__right">
               <img src={car1} alt="" />
               <form className="trade__input__wrapper">
-                <input type="checkbox" />
-                <input type="checkbox" />
-                <input type="checkbox" />
-                <input type="checkbox" />
-                <input type="checkbox" />
+                <span className="trade__right__select-1"></span>
+                <span className="trade__right__select-2"></span>
+                <span className="trade__right__select-3"></span>
+                <span className="trade__right__select-4"></span>
+                <span className="trade__right__select-5"></span>
               </form>
             </div>
           </div>

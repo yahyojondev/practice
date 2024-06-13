@@ -12,18 +12,29 @@
       .choose__title {
         color: rgb(255, 255, 255);
         font-family: Inter;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 700;
         line-height: 110%;
         letter-spacing: 0px;
         text-align: center;
         text-transform: uppercase;
+        @media only screen and (min-width: 600px) {
+          font-size: 40px;
+        }
       }
       .choose__form {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
         gap: 24px;
+        @media only screen and (min-width: 530px) {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        @media only screen and (min-width: 800px) {
+          grid-template-columns: repeat(3, 1fr);
+          align-items: center;
+          justify-content: space-between;
+        }
         .choose__select {
           display: flex;
           flex-direction: column;
@@ -43,11 +54,14 @@
             font-family: Inter;
             font-size: 16px;
             padding: 0 20px;
-            width: 392px;
+            width: 100%;
             height: 52px;
             border: 1px solid rgb(147, 150, 151);
             border-radius: 8px;
             background: rgb(37, 44, 44);
+            @media only screen and (min-width: 1200px) {
+              width: 392px;
+            }
           }
         }
       }
@@ -58,12 +72,18 @@
         .choose__card {
           padding: 24px 24px 35px;
           width: 100%;
-          height: 237px;
           border: 1px solid rgb(147, 150, 151);
           border-radius: 10px;
           display: flex;
-          align-items: center;
-          justify-content: space-between;
+          flex-direction: column;
+          @media only screen and (min-width: 800px) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+          }
+          @media only screen and (min-width: 1200px) {
+            height: 250px;
+          }
           .choose__card__img {
             width: 100%;
             max-width: 416px;
@@ -76,7 +96,11 @@
             gap: 24px;
             &__top {
               display: flex;
+              flex-direction: column;
               column-gap: 140px;
+              @media only screen and (min-width: 1200px) {
+                flex-direction: row;
+              }
               .card__top__left {
                 display: flex;
                 flex-direction: column;
@@ -117,9 +141,10 @@
                 display: flex;
                 flex-direction: column;
                 row-gap: 12px;
+
                 button {
                   width: 100%;
-                  width: 320px;
+                  // width: 320px;
                   height: 48px;
                   border: 1px solid rgb(255, 149, 73);
                   border-radius: 8px;
@@ -132,6 +157,9 @@
                   display: flex;
                   align-items: center;
                   gap: 10px;
+                  @media only screen and (min-width: 600px) {
+                    width: 320px;
+                  }
                 }
                 .choose__card__top__btn {
                   border: none;
@@ -148,8 +176,12 @@
             }
             &__bottom {
               display: flex;
-              align-items: center;
+              flex-direction: column;
               gap: 24px;
+              @media only screen and (min-width) {
+                flex-direction: row;
+                align-items: center;
+              }
               .choose__img__text {
                 display: flex;
                 align-items: center;
@@ -193,12 +225,19 @@
     &__bottom {
       display: flex;
       align-items: center;
-      gap: 40px;
+      flex-direction: column;
+      @media only screen and (min-width: 1000px) {
+        gap: 40px;
+        flex-direction: row;
+      }
+      gap: 24px;
       img {
         width: 100%;
-        max-width: 636px;
-        height: 320px;
         object-fit: contain;
+        @media only screen and (min-width: 700px) {
+          max-width: 636px;
+          height: 320px;
+        }
       }
       &__content {
         display: flex;
@@ -207,18 +246,20 @@
         p {
           color: rgb(255, 255, 255);
           font-family: Inter;
-          font-size: 40px;
+          font-size: 35px;
           font-weight: 700;
           line-height: 110%;
           letter-spacing: 0px;
           text-transform: uppercase;
+          @media only screen and (min-width: 1100px) {
+            font-size: 40px;
+          }
         }
         button {
           display: flex;
           align-items: center;
           gap: 10px;
           width: 100%;
-          max-width: 207px;
           height: 48px;
           border-radius: 8px;
           background: rgb(255, 149, 73);
@@ -228,6 +269,9 @@
           font-weight: 500;
           line-height: 110%;
           letter-spacing: 0px;
+          @media only screen and (min-width: 600px) {
+            max-width: 207px;
+          }
         }
       }
     }
